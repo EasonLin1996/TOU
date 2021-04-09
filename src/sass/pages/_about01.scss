@@ -1,0 +1,133 @@
+.about-brief {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0 0 4rem 0;
+}
+
+.about-tou {
+  padding: 3rem;
+  .container {
+    max-width: 1200px;
+  }
+  @include media-breakpoint-down(sm) {
+    .col-6 {
+      width: 100%;
+    }
+  }
+  .txtbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    margin-right: -10%;
+    z-index: 1;
+    position: relative;
+    color: var(--bs-white);
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+    }
+  }
+  .pic-box {
+    margin-left: -10%;
+    overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+      height: 200px;
+    }
+  }
+  &-img {
+    object-fit: contain;
+    height: 400px;
+    vertical-align: middle;
+  }
+}
+
+.about-concept {
+  padding: 3rem 0;
+
+  @include media-breakpoint-down(md) {
+    .col-4 {
+      width: 80%;
+    }
+  }
+
+  .container:first-child {
+    max-width: 800px;
+    @include media-breakpoint-down(lg) {
+      max-width: 80%;
+    }
+  }
+  .container:last-child {
+    max-width: 70%;
+    @include media-breakpoint-down(lg) {
+      max-width: 90%;
+    }
+  }
+}
+.feature-box {
+  background-color: rgba(white, 0.8);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(black, 0.15);
+  transition: transform 0.3s;
+
+  @include media-breakpoint-down(lg) {
+    padding: 2rem;
+    max-width: 80%;
+  }
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  h4 {
+    color: var(--bs-warning);
+  }
+  &__icon {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.03);
+  }
+}
+
+.about-region {
+  padding: 3rem 0;
+  .container {
+    max-width: 800px;
+    @include media-breakpoint-down(lg) {
+      max-width: 80%;
+      .col-6 {
+        width: 100%;
+      }
+    }
+  }
+
+  .pic-box {
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+.about-client {
+  padding: 3rem 0;
+  .container {
+    max-width: 800px;
+    @include media-breakpoint-down(lg) {
+      max-width: 80%;
+    }
+  }
+}
+
+.about-indust {
+  padding: 3rem 0;
+  .container {
+    max-width: 800px;
+    @include media-breakpoint-down(lg) {
+      max-width: 80%;
+    }
+  }
+}

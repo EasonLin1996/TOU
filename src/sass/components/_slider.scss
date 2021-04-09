@@ -1,0 +1,198 @@
+/////////slider
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: $gray-300;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    height: 100vh;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    overflow: hidden;
+
+    &__bread-crumb {
+      position: absolute;
+      right: 5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 3rem;
+
+      background-image: linear-gradient(
+        135deg,
+        rgba($warning, 0.3),
+        rgba($orange, 0.3)
+      );
+      border-radius: 10px;
+
+      @include media-breakpoint-down(sm) {
+        right: 1rem;
+        z-index: 2000;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding: 2rem;
+      }
+
+      .title {
+        color: $white;
+
+        @include media-breakpoint-down(md) {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        hr {
+          width: 50%;
+          height: 3px;
+          background-color: $white;
+        }
+
+        span {
+          display: block;
+
+          &:after,
+          &::before {
+            position: absolute;
+            content: '';
+            right: 1rem;
+            bottom: 1rem;
+            width: 3rem;
+            height: 3rem;
+          }
+          &:after {
+            border-right: 5px solid $gray-200;
+            border-bottom: 5px solid $gray-200;
+            right: 1rem;
+            bottom: 1rem;
+
+            @include media-breakpoint-down(lg) {
+              border-right: 3px solid $gray-200;
+              border-bottom: 3px solid $gray-200;
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+          &::before {
+            border-top: 5px solid $gray-200;
+            border-left: 5px solid $gray-200;
+            left: 1rem;
+            top: 1rem;
+
+            @include media-breakpoint-down(lg) {
+              border-top: 3px solid $gray-200;
+              border-left: 3px solid $gray-200;
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      object-position: center;
+      object-fit: cover;
+
+      @include media-breakpoint-down(xxl) {
+        width: 100%;
+        object-position: left;
+      }
+
+      @include media-breakpoint-down(xl) {
+        width: 100%;
+        object-position: left;
+      }
+      @include media-breakpoint-down(lg) {
+        width: auto;
+        left: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: auto;
+        position: relative;
+        left: -8rem;
+      }
+    }
+  }
+  &__item:first-child {
+    display: block;
+  }
+  &__button {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 0;
+    }
+  }
+  &__dotbox {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    list-style: none;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      width: 50px;
+      height: 10px;
+      padding: 0 10px;
+      bottom: 10px;
+    }
+  }
+  &__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #555;
+    border-radius: 50%;
+    position: relative;
+    &:first-child {
+      background-color: #fff;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 5px;
+      height: 5px;
+    }
+  }
+}

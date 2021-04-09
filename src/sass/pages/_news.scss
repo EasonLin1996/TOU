@@ -1,0 +1,100 @@
+.section-news {
+  padding: 4rem 0;
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__item {
+    background-color: $gray-300;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    & ~ & {
+      margin-top: 3rem;
+    }
+
+    &.active {
+      .fa-plus {
+        transform: rotate(-135deg);
+      }
+    }
+
+    &-back {
+      .bg-blend {
+        background-image: url(../../../public/img/newspic/news03.png);
+        background-size: contain;
+        background-position: center;
+        background-color: #ccc;
+        background-blend-mode: screen;
+      }
+    }
+    .fa-plus {
+      color: $orange-300;
+      right: 1rem;
+      top: 1rem;
+      font-size: 2rem;
+      transition: all 0.3s;
+    }
+
+    &__picbox {
+      border-radius: 0.5rem;
+      overflow: hidden;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    &__pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__txtbox {
+      padding: 1rem;
+      padding-right: 3rem;
+
+      @include media-breakpoint-down(sm) {
+        padding: 1rem;
+        width: 50%;
+      }
+    }
+
+    &-distxt {
+      padding: 2rem;
+      line-height: 2;
+
+      @include media-breakpoint-down(md) {
+        padding: 1rem;
+      }
+      .col-txt-2 {
+        column-count: 2;
+        column-gap: 3rem;
+        @include media-breakpoint-down(md) {
+          column-count: 1;
+        }
+      }
+    }
+
+    &-dispic {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+
+      @include media-breakpoint-down(md) {
+        img {
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

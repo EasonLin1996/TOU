@@ -1,0 +1,17 @@
+@keyframes boop {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: $box-shadow-lg;
+  }
+  25% {
+    transform: rotate(5deg);
+    box-shadow: $box-shadow-lg;
+  }
+  50% {
+    transform: rotate(-5deg);
+    box-shadow: $box-shadow-lg;
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
