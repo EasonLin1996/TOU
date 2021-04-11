@@ -1,0 +1,46 @@
+.section-heading {
+  padding: 7rem;
+  color: $white;
+  margin-top: 5rem;
+
+  @supports (position: sticky) {
+    margin: 0;
+  }
+
+  &__pic {
+    height: 100%;
+  }
+
+  &-contact {
+    background: linear-gradient(135deg, transparent, $gray-600 60%) center
+        center/ 100% 100%,
+      url(../../public/img/contact/contact-heading-md.jpg) left 30% / 70%;
+    background-repeat: no-repeat;
+  }
+
+  &-news {
+    background: linear-gradient(135deg, transparent, $gray-600 60%) center
+        center/ 100% 100%,
+      url(../../public/img/newspic/news-title.jpg) left 65% / cover;
+  }
+
+  &-products {
+    background: linear-gradient(135deg, transparent, $gray-600 60%) center
+        center/ 100% 100%,
+      url(../../public/img/products/products-title.jpg) left center / cover;
+    background-repeat: no-repeat;
+  }
+
+  &-about {
+    background: linear-gradient(135deg, transparent, $gray-600 60%) center /
+        100% 100%,
+      url(../../public/img/about-us/about-us-title.JPG) left top / cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(lg) {
+      background: linear-gradient(135deg, transparent, $gray-600 60%)
+          center/100% 100%,
+        url(../../public/img/about-us/about-us-title.JPG) left top/cover;
+    }
+  }
+}

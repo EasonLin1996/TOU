@@ -1,0 +1,22 @@
+.nowpage {
+  padding: 1rem 0;
+
+  &__link {
+    text-decoration: none;
+    color: $orange;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+//////all will use
+.show {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+
+.before-after-line {
+  display: flex;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    height: 3px;
+    flex-grow: 1;
+    background-color: #ccc;
+    margin: auto;
+  }
+  &:after {
+    margin-left: 0.5em;
+  }
+  &::before {
+    margin-right: 0.5em;
+  }
+}
+
+.line-down::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 5rem;
+  height: 2px;
+  background-color: $gray-500;
+}

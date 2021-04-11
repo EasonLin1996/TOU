@@ -1,0 +1,28 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import './abstracts/variables';
+@import './abstracts/utilities';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+@import './base/animation';
+@import './base/base';
+
+@import './components/loading';
+@import './components/products-item';
+@import './components/nowpage';
+@import './components/section-heading';
+@import './components/totop';
+@import './components/navburger';
+@import './components/card';
+@import './components/slider';
+@import './components/form';
+@import './components/tab';
+
+@import './layout/footer';
+@import './layout/navigation';
+
+@import './pages/home';
+@import './pages/products';
+@import './pages/news';
+@import './pages/about01';
+@import './pages/about02';
+@import './pages/contact.scss';
