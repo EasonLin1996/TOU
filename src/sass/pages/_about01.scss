@@ -1,5 +1,5 @@
 .about-brief {
-  background-color: rgba(0, 0, 0, 0.1);
+  // background-color: rgba(0, 0, 0, 0.1);
   padding: 0 0 4rem 0;
 }
 
@@ -15,23 +15,24 @@
   }
   .txtbox {
     padding: 1.5rem;
-    margin-right: -10%;
+    // margin-right: -10%;
     z-index: 1;
     position: relative;
-    color: var(--bs-white);
+    color: black;
+    // color: var(--bs-white);
 
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: -5;
-      top: 0;
-      left: 0;
-      width: 15rem;
-      height: 15rem;
-      transform: rotate(70deg);
-      transform-origin: 50% 50%;
-      background-color: rgba($orange, 0.6);
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   z-index: -5;
+    //   top: 0;
+    //   left: 0;
+    //   width: 18rem;
+    //   height: 18rem;
+    //   transform: rotate(70deg);
+    //   transform-origin: 50% 50%;
+    //   background-color: rgba($orange, 0.6);
+    // }
     &::before {
       content: '';
       position: absolute;
@@ -39,9 +40,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.8);
+      // background-color: rgba(0, 0, 0, 0.8);
       z-index: -10;
-      box-shadow: -1px -1px 1px 1px $orange;
+      // box-shadow: -1px -1px 1px 1px $orange;
     }
 
     @include media-breakpoint-down(sm) {
@@ -49,17 +50,28 @@
     }
   }
   .pic-box {
-    margin-left: -10%;
+    // margin-left: -10%;
     overflow: hidden;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
     @include media-breakpoint-down(sm) {
+      width: 100%;
       margin-left: 0;
+      height: 200px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-left: 0;
+      width: 100%;
       height: 200px;
     }
   }
   &-img {
     object-fit: contain;
-    height: 400px;
     vertical-align: middle;
+    width: 100%;
+    height: 100%;
   }
 }
 
