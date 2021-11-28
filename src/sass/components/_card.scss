@@ -46,12 +46,12 @@
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
     &--1 {
-      background: url(../../public/img/TWnew1.png) center / contain;
+      background: url(../../public/img/CNnew1.png) center / contain;
       background-repeat: no-repeat;
     }
 
     &--2 {
-      background: url(../../public/img/CNnew1.png) center / contain;
+      background: url(../../public/img/TWnew1.png) center / contain;
       background-repeat: no-repeat;
     }
   }
@@ -63,8 +63,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    ol li {
-      list-style-type: decimal;
+    a {
+      color: var(--bs-white);
+      text-decoration: none;
+    }
+    ul li {
+      list-style-type: none;
     }
   }
 
@@ -104,12 +108,12 @@
       border-top-left-radius: none;
       border-top-right-radius: none;
       &--1 {
-        background: url(../../public/img/TWnew1.png) center / contain;
+        background: url(../../public/img/CNnew1.png) center / contain;
         background-repeat: no-repeat;
       }
 
       &--2 {
-        background: url(../../public/img/CNnew1.png) center / contain;
+        background: url(../../public/img/TWnew1.png) center / contain;
         background-repeat: no-repeat;
       }
     }
@@ -123,6 +127,18 @@
       flex-direction: column;
       ol li {
         list-style-type: decimal;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__side {
+      &--front {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &--taiwan {
+        width: 50%;
       }
     }
   }

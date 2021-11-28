@@ -23,24 +23,22 @@ $(function () {
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     loop: true,
-    items: 4,
-    nav: true,
+    items: 1,
     dots: false,
     nav: false,
-    margin: 20,
-    dotsEach: true,
-    responsive: {
-      0: {
-        margin: 5,
-        items: 2,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 4,
-      },
-    },
+    dotsEach: false,
+    // responsive: {
+    //   0: {
+    //     // margin: 5,
+    //     items: 1,
+    //   },
+    //   600: {
+    //     items: 1,
+    //   },
+    //   1000: {
+    //     items: 1,
+    //   },
+    // },
   });
   // Go to the next item
   $('.owl-next').click(function () {

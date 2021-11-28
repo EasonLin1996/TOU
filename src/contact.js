@@ -22,7 +22,7 @@
 
     emailjs
       .send(
-        'service_7c4ep5r',
+        'service_q9qitra',
         'template_98la6js',
         templateParams,
         'user_GVvtbF6VrvzONf6sm26WI'
