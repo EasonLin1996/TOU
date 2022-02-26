@@ -1,5 +1,6 @@
 ///////////////footer
 .footer {
+  text-align: center;
   background-color: var(--bs-gray);
 
   @include media-breakpoint-down(lg) {
@@ -42,7 +43,7 @@
       }
     }
     .info-box {
-      width: 17rem;
+      width: 100%;
       transform: translateX(-5px);
       margin-bottom: 0.5rem;
       border-radius: 5px;
