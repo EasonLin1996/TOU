@@ -238,7 +238,7 @@
   .section-heading__pic {
     height: 100%; }
   .section-heading-contact {
-    background: linear-gradient(135deg, transparent, #6c757d 60%) center center/100% 100%, url(../../public/img/contact/contact-heading-md.jpg) left 30%/70%;
+    background: linear-gradient(135deg, transparent, #6c757d 60%) center center/100% 100%, url(../../public/img/contact/zhentu2022227.png) left top/cover;
     background-repeat: no-repeat; }
   .section-heading-news {
     background: linear-gradient(135deg, transparent, #6c757d 60%) center center/100% 100%, url(../../public/img/newspic/news-title.jpg) left 65%/cover; }
@@ -246,11 +246,11 @@
     background: linear-gradient(135deg, transparent, #6c757d 60%) center center/100% 100%, url(../../public/img/products/products-title.jpg) left center/cover;
     background-repeat: no-repeat; }
   .section-heading-about {
-    background: linear-gradient(135deg, transparent, #6c757d 60%) center/100% 100%, url(../../public/img/about-us/about-us-title.JPG) left top/cover;
+    background: linear-gradient(135deg, transparent, #6c757d 60%) center/100% 100%, url(../../public/img/about-us/about-us-title.png) left top/cover;
     background-repeat: no-repeat; }
     @media (max-width: 991.98px) {
       .section-heading-about {
-        background: linear-gradient(135deg, transparent, #6c757d 60%) center/100% 100%, url(../../public/img/about-us/about-us-title.JPG) left top/cover; } }
+        background: linear-gradient(135deg, transparent, #6c757d 60%) center/100% 100%, url(../../public/img/about-us/about-us-title.png) left top/cover; } }
 
 .totop {
   width: 3rem;
@@ -764,6 +764,7 @@
         width: 100%; }
 
 .footer {
+  text-align: center;
   background-color: var(--bs-gray); }
   @media (max-width: 991.98px) {
     .footer .container {
@@ -793,7 +794,7 @@
       .footer .info img {
         width: 100%; } }
     .footer .info .info-box {
-      width: 17rem;
+      width: 100%;
       transform: translateX(-5px);
       margin-bottom: 0.5rem;
       border-radius: 5px;
@@ -1032,7 +1033,7 @@
       z-index: 10;
       transform: scale(1.02) translateY(-0.2rem);
       box-shadow: 0 1.25em 2rem rgba(var(--bs-dark), 0.5);
-      outline: 0.8rem solid var(--bs-warning);
+      outline: 0.5rem solid var(--bs-warning);
       border: 1rem solid transparent; }
       @supports (outline-offset: 0) {
         .composition [class^='composition']:hover {
@@ -1191,7 +1192,8 @@
 
 .news__pic {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  object-fit: cover; }
 
 .news__txtbox {
   width: 70%;
