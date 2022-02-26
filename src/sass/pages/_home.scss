@@ -102,6 +102,10 @@
   background-color: var(--bs-light);
   padding: 6rem 0;
 
+  .container {
+    width: 50%;
+  }
+
   &__title {
     opacity: 0;
     transform: translateX(-100px);
@@ -114,11 +118,11 @@
     transition: all 2s;
   }
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(xl) {
     padding: 3rem 0;
-    .container {
-      width: 90%;
-    }
+    // .container {
+    //   width: 50%;
+    // }
   }
   @include media-breakpoint-down(sm) {
     padding: 2rem 0;

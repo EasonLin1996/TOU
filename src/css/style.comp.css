@@ -1053,6 +1053,8 @@
 .products {
   background-color: var(--bs-light);
   padding: 6rem 0; }
+  .products .container {
+    width: 50%; }
   .products__title {
     opacity: 0;
     transform: translateX(-100px);
@@ -1061,11 +1063,9 @@
     opacity: 0;
     transform: translateX(-100px);
     transition: all 2s; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1199.98px) {
     .products {
-      padding: 3rem 0; }
-      .products .container {
-        width: 90%; } }
+      padding: 3rem 0; } }
   @media (max-width: 575.98px) {
     .products {
       padding: 2rem 0; } }
