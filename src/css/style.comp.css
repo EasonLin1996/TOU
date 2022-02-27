@@ -1574,7 +1574,7 @@
         transform: rotate(-45deg);
         box-shadow: -0.5rem -0.5rem 10px -3px #caa560; }
       .timeline-list .timeline-item:nth-child(even).highlight {
-        background-image: linear-gradient(60deg, #ffcd39, transparent); }
+        background-image: linear-gradient(60deg, #ffcd39, white); }
         .timeline-list .timeline-item:nth-child(even).highlight:before {
           border-color: transparent #ffd045 transparent transparent; }
     .timeline-list .timeline-item:nth-child(odd) {
@@ -1614,7 +1614,7 @@
         transform: rotate(45deg);
         box-shadow: 0.5rem -0.5rem 10px -3px #caa560; }
       .timeline-list .timeline-item:nth-child(odd).highlight {
-        background-image: linear-gradient(-45deg, #ffcd39, transparent); }
+        background-image: linear-gradient(-45deg, #ffcd39, white); }
         .timeline-list .timeline-item:nth-child(odd).highlight:before {
           border-color: transparent transparent transparent #ffd045; }
     .timeline-list .timeline-item ol {
